@@ -1,4 +1,4 @@
-/* toombol number */
+/* tombol number */
 let prevNumber = ''
 let calculationOperator = ''
 let currentNumber = '0'
@@ -13,6 +13,7 @@ const inputNumber = (number) => {
     }
 }
 
+/* update screen */
 const updateScreen = (number) => {
     calculatorScreen.value = number
 }
@@ -77,6 +78,24 @@ const calculate = () => {
     calculationOperator = ''
 }
 
+/* menghitung persen */
+const percentages = document.querySelector(".percentage")
+
+percentages.addEventListener("click", (event) => {
+    percenting()
+})
+
+percenting = (percen) =>{
+    if(prevNumber === ""){
+        currentNumber = currentNumber / 100
+        updateScreen(currentNumber)
+    }
+    if(prevNumber !== ""){
+        currentNumber = (prevNumber * currentNumber) / 100
+        updateScreen(currentNumber)
+    }
+}
+
 /* tombol AC */
 const clearAll = () => {
     prevNumber = ''
@@ -84,6 +103,7 @@ const clearAll = () => {
     currentNumber = '0'
 }
 
+/* clear screen */
 const clearBtn = document.querySelector('.all-clear')
 
 clearBtn.addEventListener('click', () => {
@@ -99,6 +119,7 @@ inputDecimal = (dot) => {
     currentNumber += dot
 }
 
+/* angka desimal */
 const decimal = document.querySelector('.decimal')
 
 decimal.addEventListener('click', (event) => {
