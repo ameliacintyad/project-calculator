@@ -48,6 +48,7 @@ body{
     display: flex;
 }
 
+/* style tombol angka dan operator */
 button{
     background-color: #ecf0f3;
     height: 50px;
