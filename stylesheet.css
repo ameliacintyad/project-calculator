@@ -1,0 +1,101 @@
+body{
+    background-color: #FFE4E1;
+}
+
+/* style calculator */
+.calculator{
+    text-align: center;
+    margin: 0 auto;
+    width: 280px; 
+    padding: 16px;
+    border-radius: 30px;
+    background-color: #B0C4DE;
+    grid-template-columns: repeat(4,68px);
+    box-shadow: inset 5px 5px 12px #B0C4DE,5px 5px 12px rgba(0,0,0,.16);
+}
+
+.container{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+/* style calculator */
+.calculator-screen{
+    height: 50px;
+    width: 240px;
+    grid-column: span 4;
+    background-color: #ecf0f3;
+    box-shadow: inset 5px 5px 12px #fff, -5px -5px 12px rgba(0,0,0,0.16);
+    border: none;
+    border-radius: 20px;
+    color: rgb(70,70,70);
+    font-size: 50px;
+    text-align: end;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+/* modifikasi layout tombol calculator */
+.calculator-keys{
+    width: 100%;
+}
+
+.row{
+    display: flex;
+}
+
+button{
+    background-color: #ecf0f3;
+    height: 50px;
+    width: 50px;
+    border: none;
+    border-radius: 50%;
+    box-shadow: inset -5px -5px 12px #fff, 5px 5px 12px rgba(0,0,0,0.16);
+    margin: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #FF6347;
+}
+
+/* tombol = */
+.equal-sign{
+    width: 115px;
+    border-radius: 45px;
+    background-color: #FFC0CB;
+    box-shadow: inset -5px -5px 12px #FFC0CB, 5px 5px 12px rgba(0,0,0,0.16);
+}
+
+/* style tombol AC */
+.all-clear{
+    width: 120px;
+    border-radius: 45px;
+    background-color: #FFDAB9;
+    box-shadow: inset -5px -5px 12px #FFDAB9, 5px 5px 12px rgba(0,0,0,0.16);
+}
+
+.all-clear:hover{
+    background-color: #F4A460;
+    box-shadow: inset -5px -5px 12px #F4A460, 5px 5px 12px rgba(0,0,0,0.16);
+}
+
+/* background color untuk tombol operator */
+.operator, .equal-sign{
+    background-color: #FFC0CB;
+    box-shadow: inset -5px -5px 12px #FFC0CB, 5px 5px 12px rgba(0,0,0,0.16);
+}
+
+/* merubah bg color saat kursor berada diatas tombol */
+button:hover{
+    background-color: #BC8F8F;
+    color: white;
+    box-shadow: inset -5px -5px 12px #BC8F8F, 5px 5px 12px rgba(0,0,0,0.16);
+}
+
+.operator:hover, .equal-sign:hover{
+    background-color: #FA8072;
+    box-shadow: inset -5px -5px 12px #FA8072, 5px 5px 12px rgba(0,0,0,0.16);
+}
