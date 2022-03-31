@@ -84,7 +84,7 @@ button{
 }
 
 /* background color untuk tombol operator */
-.operator, .equal-sign{
+.operator, .equal-sign, .percentage{
     background-color: #FFC0CB;
     box-shadow: inset -5px -5px 12px #FFC0CB, 5px 5px 12px rgba(0,0,0,0.16);
 }
@@ -96,7 +96,7 @@ button:hover{
     box-shadow: inset -5px -5px 12px #BC8F8F, 5px 5px 12px rgba(0,0,0,0.16);
 }
 
-.operator:hover, .equal-sign:hover{
+.operator:hover, .equal-sign:hover, .percentage:hover{
     background-color: #FA8072;
     box-shadow: inset -5px -5px 12px #FA8072, 5px 5px 12px rgba(0,0,0,0.16);
 }
